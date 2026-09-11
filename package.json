@@ -1,0 +1,15 @@
+{
+  "name": "convocatorias-procuraduria-2026",
+  "version": "1.0.0",
+  "description": "Buscador interactivo por estudio y ciudad para las 318 convocatorias del Concurso de Méritos 2026 de la PGN Colombia",
+  "main": "index.html",
+  "scripts": {
+    "update": "node scraper.js",
+    "deploy": "npx surge . convocatorias-pgn-2026.surge.sh"
+  },
+  "dependencies": {
+    "puppeteer": "^22.0.0"
+  },
+  "author": "Antigravity Agent",
+  "license": "MIT"
+}
