@@ -6,8 +6,10 @@ echo ============================================================
 call node scraper.js
 echo.
 echo ============================================================
-echo   [SISTEMA AUTO] Publicando en Internet (surge.sh)...
+echo   [SISTEMA AUTO] Publicando en GitHub Pages...
 echo ============================================================
-call npx surge . --domain convocatorias-merito-2026.surge.sh
+git add convocatorias.json index.html
+git commit -m "Auto sync PGN dataset"
+git push origin master
 echo.
-echo [FINALIZADO] Sincronización finalizada correctamente.
+echo [FINALIZADO] Sincronización finalizada correctamente en GitHub Pages.
